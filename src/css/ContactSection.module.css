@@ -1,0 +1,97 @@
+/* src/css/ContactSection.module.css */
+.contactSection {
+  display: flex;
+  background-color: #53cdda;
+  padding: 1rem 5%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leftContent {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.logoContainer {
+  margin-top: 1rem;
+}
+
+.logo {
+  height: 4rem;
+}
+
+.text2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.text3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+}
+
+.button1,
+.button2 {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.button1 {
+  background-image: linear-gradient(to right, #f77062, #f53844);
+  color: white;
+  font-weight: bold;
+}
+
+.button2 {
+  background-image: linear-gradient(to right, #f77062, #f53844);
+  color: white;
+  font-weight: bold;
+}
+
+.buttonArrow {
+  position: absolute;
+  right: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.button1:hover,
+.button2:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button1:hover .buttonArrow,
+.button2:hover .buttonArrow {
+  transform: translateX(5px);
+}
+
+.rightContent {
+  width: 55%;
+}
+
+.rightContent img {
+  width: 110%;
+  height: auto;
+  max-width: none;
+  transform: translateX(-5%);
+}

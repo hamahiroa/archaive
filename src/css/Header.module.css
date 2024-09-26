@@ -1,0 +1,128 @@
+/* Header Container */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0; /* Left aligned */
+    right: 0; /* Right aligned */
+    width: 100%; /* Full width */
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    margin: 0; /* Reset margin */
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Title and Logo */
+.title {
+    line-height: 1px;
+    font-weight: 600;
+    font-size: 2.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.title a {
+    display: block;
+    color: #24292e;
+    text-decoration: none;
+}
+
+.logoImage {
+    width: 120px; /* Adjust as needed */
+    height: auto;
+}
+
+/* Navigation */
+.header ul {
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    margin: 0;
+}
+
+.header li {
+    font-size: 0.9rem;
+    margin-left: 20px;
+    list-style: none;
+}
+
+/* First Navigation Link - "お問い合わせ" */
+.header li:first-child a {
+    background-color: transparent;
+    color: #24292e;
+    padding: 10px 0;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative; /* Position relative to allow the underline to be positioned absolutely */
+    transition: color 0.3s ease;
+}
+
+.header li:first-child a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Slightly below the text */
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+.header li:first-child a:hover::after {
+    width: 100%; /* Underline expands to full width on hover */
+}
+
+/* Button Navigation Link - "資料ダウンロード" */
+.header li:last-child a {
+    color: #fff;
+    background-image: linear-gradient(to right, #f77062, #f53844); 
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.header li:last-child a:hover {
+    background-color: #ff4f4f;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design for Smaller Screens (600px or less) */
+@media screen and (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 4%;
+    }
+
+    .header ul {
+        flex-direction: column;
+    }
+
+    .header li {
+        font-size: 0.8rem;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .header li img.icon {
+        width: 20px;
+        margin-top: 15px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .logoImage {
+        width: 100px; /* Adjust as needed for smaller screens */
+    }
+}

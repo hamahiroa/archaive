@@ -1,0 +1,94 @@
+/* Container for the achievements section */
+.achievements {
+    text-align: center;
+    margin: 4rem 0;
+}
+
+/* Title styling */
+.title {
+    font-size: 1.8rem; /* Slightly smaller title */
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Container for the cards */
+/* Container for the cards */
+.cardBox {
+    display: flex;
+    justify-content: center;
+    gap: 60px; /* Increased gap between cards */
+    flex-wrap: wrap;
+    margin: 2rem auto; /* Added more top margin for extra spacing */
+    max-width: 1000px; /* Reduced maximum width */
+}
+
+
+/* Individual card styling */
+.achievementCard {
+    width: 250px; /* Smaller card width */
+    border-radius: 8px; /* Slightly less rounded corners */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #fff; /* White background */
+    overflow: hidden; /* Hide overflow for rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Image box at the top of the card */
+.imgBox {
+    height: 150px; /* Reduced height for the image container */
+    overflow: hidden; /* Hide overflow to maintain aspect ratio */
+}
+
+.imgBox img {
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Fill the container while maintaining aspect ratio */
+    object-fit: cover; /* Cover the container without distorting the image */
+}
+
+/* Content styling within the card */
+.cardContent {
+    padding: 0 0.75rem; /* Reduced padding around the content */
+    font-size: 0.8rem; /* Smaller font size */
+    font-weight: bold;
+    color: #666;
+    text-align: left;
+    margin-bottom: 0.75rem; /* Reduced bottom margin */
+}
+
+/* Footer section for the company and tags */
+/* Footer section for the company and tags */
+.cardFooter {
+    padding: 0.5rem 0.75rem; /* Reduced padding around the footer */
+    background-color: #f9f9f9; /* Light gray background */
+    border-top: 1px solid #ddd; /* Top border */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start of the flex container */
+    font-size: 0.6rem; /* Smaller font size */
+    color: #999;
+}
+
+
+.cardFooter .companyName {
+    font-weight: bold;
+}
+
+.cardFooter .tags {
+    display: flex;
+    gap: 3px; /* Reduced gap between tags */
+}
+
+.cardFooter .tag {
+    background-color: #ececec;
+    border-radius: 8px; /* Slightly smaller border radius */
+    padding: 0.2rem 0.4rem; /* Reduced padding */
+}
+
+/* Hover effect for the card */
+.achievementCard:hover {
+    transform: translateY(-4px); /* Slightly smaller lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow on hover */
+}

@@ -1,0 +1,109 @@
+/* Function コンポーネント全体のスタイル */
+.function {
+    text-align: center;
+    margin: 6rem 0; /* 上下のマージン */
+    color: #222224;
+}
+
+/* タイトルのスタイル */
+.title {
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* タイトルの下のコンテンツのスタイル */
+.content {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* カードのコンテナ */
+.cardBox {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* カード同士の間隔 */
+    flex-wrap: nowrap; /* カードを一列に並べる */
+    overflow-x: auto; /* 必要に応じて横スクロールを許可 */
+    margin: 0 auto; /* コンテナを中央に配置 */
+    max-width: 100%; /* コンテナの最大幅を設定 */
+}
+
+/* 個別のカードのスタイル */
+.functionCard {
+    padding: 1rem; /* カード内の余白 */
+    border: 1px solid #ddd; /* 薄い境界線 */
+    border-radius: 8px; /* 角を丸める */
+    background-color: #fff; /* カードの背景色 */
+    transition: transform 0.3s ease; /* スムーズな変形トランジション */
+    width: 200px; /* カードの幅 */
+    height: 300px; /* カードを縦長に設定 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 軽い影を付ける */
+    display: flex;
+    flex-direction: column; /* カード内のコンテンツを縦に並べる */
+    justify-content: space-between; /* カード内のコンテンツを均等に配置 */
+}
+
+/* 画像とタイトルを横並びにするコンテナ */
+.imgTitleContainer {
+    display: flex; /* 画像とタイトルを横に並べる */
+    align-items: center; /* 縦方向で中央揃え */
+    margin-bottom: 0.5rem; /* imgTitleContainerとその下のコンテンツの間隔 */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* 薄い黒の実線を追加 */
+    padding-bottom: 0.5rem; /* 線とタイトルの間隔を確保 */
+}
+
+/* カード内の画像のスタイル */
+.imgBox {
+    flex: 0 0 50px; /* 画像コンテナの固定幅 */
+    margin-right: 0.75rem; /* 画像とタイトルの間のスペース */
+}
+
+/* 画像のスタイル */
+.imgBox img {
+    width: 100%; /* 画像がコンテナにフィットするように */
+    height: auto; /* アスペクト比を維持 */
+    display: block; /* 画像を正しく表示 */
+}
+
+/* カード内のタイトルのスタイル */
+.cardTitle {
+    flex: 1; /* タイトルが残りのスペースを占める */
+    font-size: 0.8rem; /* タイトルのフォントサイズ */
+    font-weight: bold; /* タイトルを太字に */
+    text-align: left; /* テキストを左揃え */
+}
+
+/* カード内のコンテンツのスタイル */
+.cardContent {
+    font-size: 0.8rem; /* コンテンツのフォントサイズを小さめに */
+    margin-top: 0.5rem; /* タイトルセクションとコンテンツの間隔 */
+    text-align: left; /* コンテンツを左揃え */
+    display: flex; /* フレックスボックスを使用 */
+    align-items: flex-start; /* コンテンツを上揃えにする */
+    justify-content: flex-start; /* コンテンツを上に寄せる */
+    height: 100%; /* カード内でコンテンツを引き伸ばす */
+    flex-direction: column; /* テキストを縦に並べる */
+}
+
+/* ホバー時の効果を追加し、カードに高級感を与える */
+.functionCard:hover {
+    transform: translateY(-5px); /* ホバー時にカードを少し持ち上げる */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* ホバー時に影を深くする */
+}
+
+/* レスポンシブデザインの調整 */
+@media screen and (max-width: 600px) {
+    .cardBox {
+        gap: 10px; /* 小さな画面ではカード間の間隔を狭める */
+        flex-wrap: wrap; /* 小さな画面ではカードを折り返す */
+    }
+
+    .functionCard {
+        width: 100%; /* 小さな画面ではカードを全幅に広げる */
+    }
+
+    .imgBox {
+        flex: 0 0 40px; /* 小さな画面では画像を小さくする */
+    }
+}

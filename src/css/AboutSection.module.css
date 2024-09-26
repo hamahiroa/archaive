@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+/* Container for the About Section */
+.about {
+    margin: 5% 10%; /* Adjusted margins for better spacing */
+}
+
+/* Main layout for the About Section */
+.aboutMain {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    gap: 3rem; /* Increased gap between image and text */
+}
+
+/* Button container styling */
+.aboutButton {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* General button styling */
+.aboutButton button {
+    padding: 0.75rem 2.5rem; /* Increased horizontal padding */
+    border-radius: 25px; /* Rounded corners */
+    border: none; /* Remove default border */
+    font-size: 1.1rem; /* Slightly larger font size */
+    cursor: pointer; /* Pointer cursor */
+    margin: 0 1rem; /* Horizontal spacing between buttons */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    font-weight: bold; /* Make text bold */
+}
+
+/* Button Styles */
+.aboutButton button:first-child {
+    background-color: rgb(247, 95, 95); /* Red background */
+    color: white; /* White text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.aboutButton button:last-child {
+    background-color: white; /* White background */
+    color: red; /* Red text */
+    border: 2px solid rgb(241, 91, 91); /* Red border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+/* Hover effects */
+.aboutButton button:hover {
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+/* Active state for buttons */
+.aboutButton button:active {
+    transform: translateY(1px); /* Slight press effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Lighter shadow on press */
+}
+
+/* Further adjusted image size */
+.imgbox {
+    flex: 1; /* Allow the image container to grow */
+    max-width: 40%; /* Set maximum width to slightly smaller */
+}
+
+.imgbox img {
+    width: 95%; /* Ensure image scales with the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Textbox styling */
+.Textbox {
+    flex: 1; /* Allow the text container to grow */
+    max-width: 50%; /* Set maximum width for text content */
+}
+
+/* Title styling */
+.title {
+    font-size: 2.0rem; /* Increased font size for title */
+    font-weight: bold;
+    margin-bottom: 2rem; /* Increased bottom margin for more space */
+}
+
+/* Subtitle styling */
+.subtitle {
+    color: #DB455D;
+    font-size: 1.3rem; /* Increased font size for subtitle */
+    margin-bottom: 1rem; /* Increased bottom margin */
+    font-weight: bold;
+}
+
+/* Content styling */
+.content {
+    font-size: 1.0rem; /* Slightly larger font size for content */
+    line-height: 1.6;
+}
+
+/*====================
+Responsive Design (600px or less)
+====================*/
+@media screen and (max-width: 600px) {
+    .about {
+        margin: 5% 5%; /* Adjusted margins for smaller screens */
+    }
+
+    .aboutMain {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem; /* Adjusted gap for smaller screens */
+    }
+
+    .imgbox {
+        width: 100%; /* Full width for smaller screens */
+        margin-bottom: 2rem; /* Increased bottom margin for more space */
+    }
+
+    .Textbox {
+        width: 100%; /* Full width for smaller screens */
+        text-align: center;
+    }
+
+    .title {
+        font-size: 1.8rem; /* Adjusted font size for smaller screens */
+    }
+
+    .subtitle {
+        font-size: 1.4rem; /* Adjusted font size for smaller screens */
+    }
+
+    .content {
+        font-size: 1rem; /* Adjusted font size for smaller screens */
+        padding: 0 1rem; /* Added padding for better readability */
+    }
+
+    .aboutButton {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .aboutButton button {
+        margin: 1rem 0; /* Increased vertical margin between buttons */
+        padding: 0.75rem 2.5rem; /* Increased horizontal padding */
+        border-radius: 25px; /* Rounded corners */
+    }
+}
+
+/* Button Styles */
+.aboutButton button:first-child {
+    background-color: rgb(247, 95, 95); /* Red background */
+    color: white; /* White text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.aboutButton button:last-child {
+    background-color: white; /* White background */
+    color: red; /* Red text */
+    border: 2px solid rgb(241, 91, 91); /* Red border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}

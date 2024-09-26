@@ -1,0 +1,155 @@
+/* Container styling */
+.contactPage {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh;
+  align-items: flex-start;
+}
+
+/* Left section styling */
+.leftSection {
+  width: 45%;
+  padding-right: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center; /* Center align title and subtitle */
+}
+
+/* Title and subtitle styling */
+.title {
+  font-size: 28px;
+  color: #37B7C4; /* Changed color to #37B7C4 */
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 24px;
+  color: #37B7C4; /* Changed color to #37B7C4 */
+  margin-bottom: 20px;
+  border-bottom: 2px solid #37B7C4;
+  display: inline-block;
+}
+
+/* New gray background for info section */
+.infoSection {
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: left; /* Ensure text starts from the left */
+}
+
+/* Function list styling with light blue bullet points */
+.functionList {
+  margin-top: 15px;
+  list-style: none; /* Remove default bullet points */
+}
+
+.functionList li::before {
+  content: '•'; /* Light blue bullet points */
+  color: #37B7C4; /* Light blue color */
+  margin-right: 10px;
+}
+
+/* Description and function title spacing */
+.description {
+  margin-bottom: 30px;
+}
+
+.functionTitle {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+/* Note moved outside the gray section */
+.note {
+  font-size: 12px;
+  color: #666;
+  margin-top: 20px;
+  text-align: left;
+}
+
+/* Right section styling */
+.rightSection {
+  width: 35%; /* Reduced width for smaller form */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Form title */
+.formTitle {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Form group styling */
+.formGroup {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.required {
+  color: red;
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+/* Input, select, and textarea styling */
+input, select, textarea {
+  width: 100%;
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Privacy policy styling */
+.privacyPolicy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.agreeCheckbox {
+  display: flex;
+  align-items: center;
+}
+
+.policyNote {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+  text-align: left;
+}
+
+/* Button styling */
+.submitButton {
+  width: 100%;
+  background-color: #ff5a5a;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: #ff7878;
+}
