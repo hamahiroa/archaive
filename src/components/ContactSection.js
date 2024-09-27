@@ -27,7 +27,7 @@ const ContactSection = () => {
         </div>
       </div>
       <div className={styles.rightContent}>
-        <img src="/img/contact-screenshots.png" alt="ArchAIve Screenshots" />
+        <img src="/img/cont.png" alt="ArchAIve Screenshots" />
       </div>
     </div>
   );

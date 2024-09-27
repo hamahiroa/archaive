@@ -1,10 +1,10 @@
-/* src/css/ContactSection.module.css */
 .contactSection {
   display: flex;
   background-color: #53cdda;
   padding: 1rem 5%;
   align-items: center;
   justify-content: space-between;
+  height: 60vh;
 }
 
 .leftContent {
@@ -14,6 +14,8 @@
   align-items: center;
   text-align: center;
   color: white;
+  justify-content: center; /* 垂直方向の中央揃え */
+  height: 100%; /* 全体の高さに合わせる */
 }
 
 .logoContainer {
@@ -86,12 +88,16 @@
 }
 
 .rightContent {
-  width: 55%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: -15%; /* 画像をさらに左に移動 */
 }
 
 .rightContent img {
-  width: 110%;
-  height: auto;
+  height: 100%;
+  width: 80%;  /* 画像の幅を広げる */
+  object-fit: cover;
   max-width: none;
-  transform: translateX(-5%);
 }
